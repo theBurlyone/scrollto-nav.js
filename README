@@ -5,4 +5,25 @@ Please feel free to recommend changes, this project is really in it's infancy.
 As in I needed to build this for a project and now within the same day it is,
 itself, a project.
 
+I plan on adding all sorts of cool functionality.  Such as the ability to 
+submit a json navigation map that will be used to provide easy redirect navigation.
+
+So for instance if you stored this json object for use by the tool:
+
+{"pages" : {
+  "Home" : {
+    "object":"#about_us",
+    "object":"#contact_form"
+  },
+  "Contact" : {
+    "object":"#email_address",
+    "object":"#location_map"
+  }
+}
+
+scrollto-nav will know that when you click on "Location Map" in the menu while 
+on the home page, it will automatically know to first redirect you to the parent
+page and then scroll to the proper position.  My idea being that you wouldn't have
+to provide a redirect URL in the function because it would know what to do.  So 
+stay tuned, cool stuff coming soon!
 
